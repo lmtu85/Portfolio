@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- TemplateBeginEditable name="doctitle" -->
+	<title>Laura Tu Design</title>
+	<!-- TemplateEndEditable -->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:400,400i,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+
+	<!-- TemplateBeginEditable name="head" -->
+	<!-- TemplateEndEditable -->
+</head>
+
+<body>
+
+	<header>
+		<nav>
+			<div class="logo">
+				<a href="index.html"><img src="../images/laura-tu-logo.svg" alt="laura tu logo"/></a>
+			</div>
+			
+			<div class="mobile-ctn">
+				<img src="../images/hamburger-menu.svg" width="25px" alt="hamburger menu" id="mobile-menu"/>
+					<ul id="dropdown">
+						<!--<li><a href="#">Portfolio</a></li>-->
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</ul>
+			</div>
+			
+			<div class="desktop-ctn">
+				<ul id="desktop-menu">
+					<!--<li><a href="#">Portfolio</a></li>-->
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			
+		</nav>
+	</header>
+	
+	<!-- TemplateBeginEditable name="main-content" -->
+    <main>
+	
+		<div class="heading">
+			<div class="title">
+				<h2>Hello</h2>			
+			</div>
+		</div>
+	
+		<div class="content">
+			
+			<!--left column-->
+			<div class="column left">
+				<div class="project">
+					<div class="image-content">
+						<img src="../images/wedding-invitation.jpg" alt="wedding invitation"/>						
+					</div>
+				</div>
+			</div>
+			
+			<!--right column-->
+			<div class="column right">
+				<div class="summary">
+					<div class="text-content">
+						<h3>Project Details</h3>
+						<h4>CLIENT:</h4>
+						<p>Self</p>
+						<h4>CREATIVE FIELDS:</h4>
+						<p>Print Design</p>
+						<h4>SUMMARY:</h4>
+						<p>Wedding invitation designed with modern direction with a touch of chinese elements to still show homage to our asian roots. </p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	
+		<div class="project-nav">
+			<p class="previous"><a href="#">◄ Previous Project</a></p>
+			<p class="next"><a href="#">Next Project ►</a></p>	
+		</div>
+	</main>
+	<!-- TemplateEndEditable -->
+	
+	<footer>
+		<div class="copyright">
+			Copyright &copy; 2018 Laura Tu.
+		</div>
+		<div class="social-icons">
+			<a href="#" target="_blank"><img src="../images/github-logo.png" alt="laura github"/></a>
+			<a href="#" target="_blank"><img src="../images/linkedin-logo.png" alt="laura linkedin"/></a>
+			<a href="mailto:laura.m.tu@gmail.com" target="_blank"><img src="../images/email-logo.png" alt="laura email"/></a>
+		</div>
+	</footer>
+	
+	<script src="../js/scripts.js"></script>
+</body>
+</html>

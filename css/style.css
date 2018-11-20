@@ -1,0 +1,694 @@
+@charset "utf-8";
+
+html {
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+	line-height: 1;
+	color: rgba(81, 110, 183, 1.0);
+}
+
+body {
+	margin: auto;
+	padding: 0;
+}
+
+/* Main Header */
+
+.logo {
+  	float: left;
+  	vertical-align: middle;
+	padding: 0 30px;	
+}
+
+nav {
+	text-align: right;
+ 	height: 70px;
+	line-height: 65px; 
+}
+
+.menu {
+ 	margin: 0 30px 0 0;
+}
+
+.menu a {
+  	text-decoration: none;
+  	color: rgba(81, 110, 183, 1.0);
+  	margin: 0 10px 0px 40px;
+	line-height: 50px;
+  	clear: right;
+	font-weight: 600;
+}
+
+.menu a:hover {
+  	border-bottom: 2px solid rgba(77, 77, 77, 1.0);
+	color: rgba(77, 77, 77, 1.0);
+}
+
+.menu a:active {
+	color: rgba(168, 181, 219, 1.0);
+	border: none;
+}
+
+label {
+  	margin: 0 40px 0 0;
+  	font-size: 26px;
+  	line-height: 70px;
+  	display: none;
+  	width: 26px;
+  	float: right;
+}
+
+#toggle {
+  	display: none;
+}
+
+/* Welcome Header */
+
+.hero-content {
+	margin: 0 30px 30px 28px;
+	padding: 100px 0;
+}
+
+h1 {
+	font-family: 'playfair-display', serif;
+	font-size: 50px;
+	color: rgba(21, 34, 60, 1.0);
+	line-height: 0.5;
+	text-align: center;
+}
+
+.hero-text {
+	color: rgba(21, 34, 60, 1.0);
+	font-size: 24px;
+	line-height: 1.5;
+	font-weight: 500;
+	text-align: center;
+}
+
+/* Project Page Header */
+
+.project-name {
+	color: #ffffff;
+	padding-left: 30px;
+	font-family: 'playfair-display', serif;
+	font-size: 32px;
+	font-weight: 500;
+	padding-top: 20px;
+}
+
+.heading {
+	padding-top: 90px;
+}
+
+.title {
+	height: 75px;
+	background-color: rgba(81, 110, 183, 1.0);
+}
+
+
+/* Landing Page Gallery */
+.main {
+ 	margin: 30px auto;
+  	display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: center;
+}
+
+.main .box {
+  	position: relative;
+  	width: 350px;
+  	margin: .75%;
+}
+
+.main .box .imgBox {
+  	position: relative;
+  	overflow: hidden;
+}
+
+.main .box .imgBox img {
+  	max-width: 100%;
+  	transition: transform 2s;
+}
+
+.main .box:hover .imgBox img {
+  	transform: scale(1.2);
+}
+
+.main .box .details {
+  	position: absolute;
+  	top: 15px;
+  	left: 15px;
+  	bottom: 15px;
+  	right: 15px;
+  	background: rgba(0,0,0,.85);
+	color: white;
+  	transform: scaleY(0);
+  	transition: transform .5s;
+	padding: 50px 30px;
+}
+
+.main .box:hover .details {
+   	transform: scaleY(1);
+}
+
+a div.details {
+	display: block;
+}
+
+.main .box .details .text {
+ 	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	padding: 0 20px;
+  	color: #ffffff;
+}
+
+.main .box .details .text h2 {
+  	margin: 0;
+  	padding: 0;
+  	font-size: 20px;
+}
+
+.main .box .details .text p {
+  	margin: 10px 0;
+ 	padding: 0;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 600;
+}
+
+/* Portfolio Image gallery */
+
+.container {
+	margin: auto;
+	padding: 50px 30px 0 30px;
+}
+
+#myBtnContainer {
+	text-align: center;
+}
+
+/*.row {
+    margin: 8px -16px;
+}*/
+
+/* Add padding BETWEEN each column (if you want) */
+/*.row,
+.row > .column {
+    padding: 8px;
+}*/
+
+/* Create three equal columns that floats next to each other */
+.item {
+    float: left;
+    max-width: 33.33%;
+    display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+/*.content {
+    background-color: white;
+    padding: 10px;
+}*/
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+  	border: none;
+  	outline: none;
+  	padding: 12px 16px;
+  	background-color: white;
+  	cursor: pointer;
+	color: rgba(21, 34, 60, 1.0);
+	text-transform: uppercase;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  	background-color: rgba(21, 34, 60, 1.0);
+	color: white;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  	background-color: rgba(81, 110, 183, 1.0);
+ 	color: white;
+}
+
+/*.row {
+ 		margin: 70 auto;
+  	display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: center;
+}*/
+
+.row {
+ 	margin: 30px auto;
+  	display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: center;
+}
+
+.row .item {
+  	position: relative;
+  	width: 350px;
+  	margin: .75%;
+}
+
+.row .item .imgBox {
+  	position: relative;
+  	overflow: hidden;
+}
+
+.row .item .imgBox img {
+  	max-width: 100%;
+  	transition: transform 2s;
+}
+
+.row .item:hover .imgBox img {
+  	transform: scale(1.2);
+}
+
+.row .item .details {
+  	position: absolute;
+  	top: 15px;
+  	left: 15px;
+  	bottom: 15px;
+  	right: 15px;
+  	background: rgba(0,0,0,.85);
+	color: white;
+  	transform: scaleY(0);
+  	transition: transform .5s;
+	padding: 50px 30px;
+}
+
+.row .item:hover .details {
+   	transform: scaleY(1);
+}
+
+a div.details {
+	display: block;
+}
+
+.row .item .details .text {
+ 	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	padding: 0 20px;
+  	color: #ffffff;
+}
+
+.row .item .details .text h2 {
+  	margin: 0;
+  	padding: 0;
+  	font-size: 20px;
+}
+
+.row .item .details .text p {
+  	margin: 10px 0;
+ 	padding: 0;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 600;
+}
+
+.see-more {
+	text-align: center;
+	margin: 20px 0;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.see-more a {
+	text-decoration: none;
+	color: rgba(81, 110, 183, 1.0);
+}
+
+.see-more a:hover {
+	font-weight: 700;
+	color: rgba(21, 34, 60, 1.0);
+	text-decoration: underline;
+}
+
+.see-more a:active {
+	text-decoration: none;
+	font-weight: 900;
+	color: rgba(168, 181, 219, 1.0);
+}
+
+/* Project Content */
+
+.main-content {
+	display: flex;
+	justify-content: space-around;
+	padding: 30px;
+	margin: auto;
+}
+
+.column {
+	width: 50%;
+}
+
+.right {
+	padding-left: 20px;
+}
+
+.summary {
+	padding: 25px;
+	background-color: rgba(168, 181, 219, 1.0);
+}
+
+.image-content img {
+	max-width: 100%;
+	padding-bottom: 30px;
+}
+
+h3 {
+	width: 38%;
+	font-family: 'playfair-display', serif;
+	color: rgba(21, 34, 60, 1.0);
+	font-size: 21px;
+	border-bottom: 2px solid rgba(21, 34, 60, 1.0);
+	padding-bottom: 10px;
+}
+
+h4 {
+	padding-top: 15px;
+}
+
+.text-content p {
+	color: rgba(21, 34, 60, 1.0);
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.pdf a {
+	text-decoration: none;
+}
+
+.addl-imgs {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.addl-imgs img {
+	max-width: 80%;
+	padding-bottom: 30px;
+}
+
+.versions {
+	display: flex;
+	width: 100%;
+}
+
+.versions p {
+	font-size: 18px;
+	text-align: center;
+	font-weight: 600;
+	color: rgba(21, 34, 60, 1.0);
+}
+
+.versions img {
+	max-width: 100%;
+	padding-bottom: 20px;
+}
+
+.ver {
+	padding: 0 30px;
+}
+
+.project-nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 30px;
+}
+
+.project-nav a {
+	text-decoration: none;
+	color: rgba(81, 110, 183, 1.0);
+}
+
+.project-nav p {
+	font-weight: 700;
+}
+
+.project-nav a:hover {
+	font-weight: 700;
+	color: rgba(21, 34, 60, 1.0);
+	text-decoration: underline;
+}
+
+/* Bio */
+.biography {
+	margin: 30px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bio-pic {
+	width: 290px;
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.biography p {
+	line-height: 1.5;
+	text-align: center;
+	width: 50%;
+	font-weight: 500;
+	color: rgba(21, 34, 60, 1.0);
+}
+
+.contact-me {
+	text-decoration: none;
+	color: rgba(81, 100, 183, 1.0);
+	font-weight: 600;
+}
+
+.contact-me:hover {
+	text-decoration: underline;
+	color: rgba(21, 34, 60, 1.0);
+	font-weight: 600;
+}
+
+/* Footer */
+
+footer {
+	display: flex;
+	align-items: center;
+	border-top: 1px solid rgba(81, 100, 183, 1.0);
+	font-weight: 500;
+	font-size: 14px;
+	padding-top: 25px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.copyright {
+	flex-grow: 1;
+	margin-left: 30px;
+}
+
+.social-icons {
+	margin-right: 30px;
+}
+
+.social-icons img {
+	padding-left: 25px;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 590px) and (max-width: 840px){
+	.hero-content p {
+		font-size: 18px;
+	}
+	
+	.main-content {
+		display: block;
+		margin: auto;
+		justify-content: center;
+	}
+	
+	.column {
+		width: 100%;
+	}
+	
+	.right {
+		padding-left: 0;
+	}
+}
+
+@media (min-width: 401px) and (max-width: 589px){
+	label {
+    	display: block;
+    	cursor: pointer;
+    	color: rgba(81, 110, 183, 1.0);
+  	}
+  
+  	.menu {
+    	text-align: center;
+    	width: 100%;
+    	display: none;
+  	}
+  
+  	.menu a {
+    	display: block;
+    	border-bottom: 1px solid #eaeaeb;
+    	margin: 0;
+  	}
+  
+  	.menu a:hover {
+    	background-color: rgba(81, 110, 183, 1.0);
+    	color: white;
+  	}
+  
+  	.menu a:active {
+   	 	background-color: gray;
+   		color: white;
+ 	 }
+  
+  	#toggle:checked + .menu {
+    	display: block;
+  	}
+	
+	h1 {
+		font-size: 40px;
+	}
+	
+	.hero-content p {
+		font-size: 16px;
+		line-height: 1.8;
+	}
+	
+	.main-content {
+		display: block;
+		margin: auto;
+		justify-content: center;
+	}
+	
+	.column {
+		width: 100%;
+	}
+	
+	.right {
+		padding-top: 20px;
+		padding-left: 0;
+	}
+	
+	#myBtnContainer {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+}
+
+/*Mobile View*/
+@media (max-width: 400px){
+	label {
+    	display: block;
+    	cursor: pointer;
+    	color: rgba(81, 110, 183, 1.0);
+  	}
+  
+  	.menu {
+    	text-align: center;
+    	width: 100%;
+    	display: none;
+  	}
+  
+  	.menu a {
+    	display: block;
+    	border-bottom: 1px solid #eaeaeb;
+    	margin: 0;
+  	}
+  
+  	.menu a:hover {
+    	background-color: rgba(81, 110, 183, 1.0);
+    	color: white;
+  	}
+  
+  	.menu a:active {
+    	background-color: gray;
+    	color: white;
+  	}
+  
+  	#toggle:checked + .menu {
+   		display: block;
+  	}
+	
+	h1 {
+		font-size: 40px;
+	}
+	
+	h2 {
+		font-size: 24px;
+		line-height: 1.5;
+	}
+	
+	h3 {
+		font-size: 16px;
+	}
+	
+	h4 {
+		font-size: 14px;
+	}
+	
+	.text-content p {
+		font-size: 13px;
+	}
+	
+	.main-content {
+		display: block;
+		margin: auto;
+		justify-content: center;
+	}
+	
+	.column {
+		width: 100%;
+	}
+	
+	.right {
+		padding-top: 20px;
+		padding-left: 0;
+	}
+	
+	#myBtnContainer {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	footer {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	.copyright {
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+
+}
